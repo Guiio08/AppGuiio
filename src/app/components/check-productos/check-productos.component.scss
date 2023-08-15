@@ -1,0 +1,25 @@
+@import '../../../assets/sass/variables';
+.box-productos {
+    border-bottom: .2rem solid $gris-claro;
+    h3 {
+        font-family: $fuentes-headings;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+        &__item {
+            margin: 1rem 0;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            font-family: $fuente-principal;
+            font-size: 1.5rem;
+            font-weight: 550;
+            input {
+                width: 2rem;
+                height: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+<div class="header">
+    <div class="header__envios text-center">
+        <p class="text-blanco">
+            Envío gratis a toda Colombia por compras superiores a $250.000
+        </p>
+    </div>
+    <div class="contenedor">
+        <div class="header__logo">
+            <img src="../../assets/image/logo-guiio-uniformes.png" alt="">
+        </div>
+        <div class="header__nav-bar" [class.menuClass]="menuVariable">
+            <ul class="nav_bar">
+                <li class="nav_bar__item active">New in</li>
+                <li class="nav_bar__item">Hombre</li>
+                <li class="nav_bar__item">Mujer</li>
+                <li class="nav_bar__item">Contactenos</li>
+            </ul>
+        </div>
+        <div class="header__icons">
+            <ul class="nav-bar__icons">
+                <li>
+                    <a href="#" class="icon-nav-bar search"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon-nav-bar user"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon-nav-bar cart"></a>
+                </li>
+            </ul>
+        </div>
+        <button class="button-menu" (click)="toggleMenu()">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
+    </div>
+    <div class="foto-apertura">
+        <img src="../../../assets/image/portada-home.webp" alt="">
+    </div>
+</div>

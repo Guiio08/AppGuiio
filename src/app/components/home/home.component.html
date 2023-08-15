@@ -1,0 +1,13 @@
+<div class="home">
+    <div class="contenedor">
+        <h2>NEW IN</h2>
+        <div class="new-in__productos">
+            <a (click)="ejecutarCambioCheck()" class="contenedor-producto animated fadeIn fast" [routerLink]="['/detalle-producto',i]" *ngFor="let producto of productos; let i = index">
+                <img class="producto__img" [src]="producto.img" alt="">
+                <h4 class="producto__descripcion">{{producto.descripcion}}</h4>
+                <p class="producto__color">{{producto.color}}</p>
+                <p class="producto__precio">{{producto.precio}}</p>
+            </a>
+        </div>
+    </div>
+</div>

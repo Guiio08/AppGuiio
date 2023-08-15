@@ -1,0 +1,125 @@
+@import 'assets/sass/variables';
+@import "~@fortawesome/fontawesome-free/css/all.css";
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*10px = 1 rem*/
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $fuentes-headings;
+    margin: 0 0 5rem 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3.6rem;
+}
+
+h4 {
+    font-size: 2.4px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 1px solid --gris-claro;
+}
+
+.contenido-centrado {
+    width: min(95%, 120rem);
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-blanco {
+    color: var(--blanco);
+}
+
+.contenedor {
+    width: min(95%, 120rem);
+    margin: 0 auto;
+}
+
+//Animación
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.contenedor-home {
+    display: flex;
+    gap: 20px;
+    margin-top: 3rem;
+    .col-1 {
+        width: 25%;
+    }
+    .col-principal {
+        width: 75%;
+        text-align: center;
+    }
+}
+
+//Fin animación
+
+/* You can add global styles to this file, and also import other style files */

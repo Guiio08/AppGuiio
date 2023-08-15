@@ -1,0 +1,9 @@
+<div class="colores">
+    <h3>Carta de colores </h3>
+    <div class="colores__box">
+        <div class="color" *ngFor="let color of colores">
+            <div class="color__circle" [style.background]="color.codigoColor"></div>
+            <p class="color__nombre">{{ color.nameColor}}</p>
+        </div>
+    </div>
+</div>
